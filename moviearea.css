@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container .head {
+    position: absolute;
+    top: 10;
+    left: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0px 50px;
+    z-index: 1000000;
+}
+
+.container .head img{
+    width: 13%;
+    
+   
+}
+
+.video video{
+    height:100%;
+    width: 100%;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.tr{
+    display: flex;
+    overflow-y: hidden;
+    scrollbar-width: 9px; 
+   
+}
+
+
+.tr img{
+    margin:5px;
+    border-radius: 8px;
+}
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width : 0px;
+    background: transparent;
+}
+
+.no{
+    display: flex;
+    overflow-y: hidden;
+    scrollbar-width: 9px; 
+    
+
+}
+.no img{
+     margin:5px;
+     width:160px;
+     height:180px;
+     padding-left: 1px;
+     border-radius: 8px;
+}
+
+
+.no img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}
+
+.home-image{
+    background-image: url(assests/moneyhesist.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    filter: brightness();
+    padding-right: 0px;
+}
+
+
+
+.home-image-text{
+    color: blanchedalmond;
+    position: relative;
+    width: 30%;
+    top: 13em;
+    left: 3em;
+    z-index: 1;
+}
+
+.money{
+    width: 100%;
+    height:auto;
+}
+
+.play-button{
+    background-color: red;
+    color: black;
+    border-radius: 4px;
+    width: 70px;
+    padding: 5px 20px 0px;
+    font-size: 25px;
+}
+
+.play-button img{
+    margin-top: 0px;
+    padding-left: 5px;
+    width: 25px;
+    position: absolute;
+}
+
+
+.tr img:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(70%);
+}

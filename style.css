@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container .head {
+    position: absolute;
+    top: 10;
+    left: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0px 50px;
+    z-index: 1000000;
+}
+
+.container .head img{
+    width: 13%;
+    
+   
+}
+
+.container .head a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #E50914;
+    padding: 8px 15px;
+    border-radius: 2px;
+    min-width: 15px;
+}
+
+.container  .head select{
+
+    color: aliceblue;
+    text-decoration: none;
+    background-color: transparent;
+   position : absolute;
+   right: 4cm;
+    border-radius: 2px;
+    outline: none;
+    border-color:2px white;
+    font-size: 1rem;
+    font-weight: 300;
+ height: 2.1em;
+ 
+}
+
+
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0%; */
+    /* border-bottom: 0.6rem solid #111; */
+    /* padding-bottom:-90px; */
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    z-index: 1;
+    background: linear-gradient(to top,#000,transparent);
+}
+
+
+
+.banner .fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.banner .box{
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     z-index: 1000;
+}
+
+.banner .box .heading{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     
+}
+.banner .box .heading h2{
+
+font-size: 3em;
+letter-spacing: 2px;
+color: #fff;
+width:  80%;
+
+}
+.banner .box .heading h5{
+    font-size: 1.5em;
+    color: #fff;
+   font-weight: 300;
+   padding: 1.5rem;
+   
+}
+.banner .box .heading p{
+    font-size: 1.2rem;
+    color: #fff;
+   font-weight: 350;
+   padding: 1 rem;
+}
+
+.banner .box .email{
+ display: flex;
+ flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1rem 0;
+
+
+
+}
+.banner .box .email input{
+font-size: 16px;
+height: 50px;
+min-width: 400px;
+color: black;
+padding: 10px 10px 0px 0px;
+outline: none;
+border-radius: 2px;
+border : 1px solid grey;
+align-items: centers;
+
+}
+.banner .box .email a{
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #fff;
+    font-weight: 400;
+    background: #E50914;
+    line-height: 61px;
+    border-radius: 2px;
+    min-width: 200px;
+    font-size: 1.625rem;
+    padding: 0 30px;
+    letter-spacing: 0.1px;
+    text-align: center;
+
+}
+.banner .box .email input::placeholder{
+    position: absolute;
+    top: 22px;
+    left: 10px;
+}
+
+ .card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5{
+
+    border-top: 10px solid #111;
+    padding: 50px;
+    color: #fff;
+
+}
+
+.card-1 {
+    
+    padding-top: 10px;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1{
+    padding-left: 80px;
+}
+.style-cards h1{
+font-size: 3rem;
+padding: 1rem;
+padding-left: 0;
+
+}
+
+.style-cards p{
+font-size: 1.9rem;
+line-height: 2rem;
+padding-right:15% ;
+}
+
+.card-1 video{
+    position: relative;
+    height: 59%;
+    width: 81%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-left: 15%;
+    /* padding-left:15% ; */
+}
+
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    /* padding-left:15% ; */
+}
+
+
+
+
+
+
+
+ .card-2 {
+
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+} 
+
+
+.desc-2{
+    padding-left: 75px;
+}
+
+
+
+
+
+
+.card-3 {
+
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3{
+    padding-left: 80px;
+}
+
+.style-cards h1{
+font-size: 3rem;
+padding: 1rem;
+padding-left: 0;
+
+}
+
+.style-cards p{
+font-size: 1.9rem;
+line-height: 2rem;
+padding-right:15% ;
+}
+
+.card-3 video{
+    position: relative;
+    bottom: 80px;
+    height: 50%;
+    width: 70%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    margin-left: 15%;
+    padding-left:15% ;
+}
+
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    padding-left:15% ;
+}
+
+
+
+.card-4 {
+
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px; 
+    
+}
+
+
+.desc-4{
+    padding-left: 75px;
+}
+
+.card-5{
+    color: #fff;
+    position: relative;
+    text-align: center;
+
+}
+
+.card-5 h1{
+padding-top: 6%;
+font-size: 4rem;
+padding-bottom: 4%;
+}
+
+.card-5 .questions{
+    position: absolute;
+    align-items: center;
+}
+.card-5 .questions button{
+    background-color: dimgrey;
+    /* align-items: center; */
+    text-align: left;
+     padding-left: 3%;
+    /* position: relative; */
+    width: 60%;
+    height: 7rem;
+   font-weight: 50;
+    font-size: 2rem;
+    position: relative;
+    top:22px;
+    border-bottom:2rem solid black;
+}
+
+.card-5 p{
+   text-align: center;
+   position: relative;
+   top:700px;
+   font-size: 1.5rem;
+   text-align: center;
+  
+}
+
+
+
